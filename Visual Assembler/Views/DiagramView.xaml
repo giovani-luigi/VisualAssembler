@@ -1,0 +1,12 @@
+﻿<Window x:Class="Visual_Assembler.Views.DiagramView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Visual_Assembler.Views"
+        mc:Ignorable="d"
+        Title="Diagrama simplificado do sistema" Height="640" Width="1100">
+    <Grid>
+        <Image Margin="30" Source="/Visual Assembler;component/Resources/CPU_VHDL.jpg" />
+    </Grid>
+</Window>
