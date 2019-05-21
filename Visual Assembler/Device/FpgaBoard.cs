@@ -38,8 +38,13 @@ namespace Visual_Assembler.Device
         public const int BOARD_BAUDRATE = 115200; // defined on hardware
         public const int MEMORY_LENGTH = 256; // defined on hardware: 256 addressable registers
         public const int PACKET_LENGTH = 4; // received packet of data is 4 byte fixed length.
-        public const int RESPONSE_TIMEOUT = 25; // timeout in 'ms' to wait for a reply after sending a command
-        
+
+        public const int RESPONSE_TIMEOUT = 100; // timeout in 'ms' to wait for a reply after sending a command
+                                                 // WARNING: It has been observed that values for timeout under 100ms can generate problems on some machines
+                                                 // The best value will depend on each device/driver and for better reliability is recommended a value of
+                                                 // around 100ms. Increasing too much will just be inconvenient as we will be blocking the calling threads
+
+
         #endregion
 
         #region Private fields
